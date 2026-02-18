@@ -10,15 +10,21 @@ body {
 
 .topbar
 {
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     display: flex;
-    height: 100px;
     align-items: center;
     justify-content: space-between;
-    background-color: #b0a387;
-    filter: blur();
+
+    height: 90px;
+    padding: 0 20px;
+    
+    backdrop-filter: blur(20px);
+    background-color: rgba(158, 187, 113, 0.199);
+    -webkit-backdrop-filter: blur(100px); 
     border-bottom: 3px ridge black;
-    padding: auto;
 }
 
 .header-center
@@ -27,6 +33,6 @@ body {
 }
 .header-center img
 {
-    height: 60px;
+    height: 200px;
 }
 
