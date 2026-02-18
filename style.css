@@ -1,0 +1,32 @@
+
+body {
+    background-color: #F7EFDE;
+}
+
+<!--NAVBAR-->
+.nav {
+    background-color: #F7EFDE;
+}
+
+.topbar
+{
+    position: relative;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #b0a387;
+    filter: blur();
+    border-bottom: 3px ridge black;
+    padding: auto;
+}
+
+.header-center
+{
+    position: relative;
+}
+.header-center img
+{
+    height: 60px;
+}
+
