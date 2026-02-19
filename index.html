@@ -5,45 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZooSAL</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="topbar">
+    <!---- <header class="topbar">
         <div class="header-left">
-            <button class="menu-btn">☰</button> <!--Snygga till denna knapp med animering-->
-        </div>
-        <div class="header-center">
-            <a href="">
-                <img src="Images/Logo_design_for_SAL.png" alt="Picture of Zoo SAL's logo">
-            </a>
-        </div>
-        <div class="header-right">
-            <a href="#opening-hours">Öppettider</a>
-            <button class="toggle-languages">SV/ENG</button> 
-        </div>
+            <button class="menu-btn">☰</button> <!--Snygga till denna knapp med animering
+    </div>
+    <div class="header-center">
+        <a href="">
+            <img src="Images/Logo_design_for_SAL.png" alt="Picture of Zoo SAL's logo">
+        </a>
+    </div>
+    <div class="header-right">
+        <a href="#opening-hours">Öppettider</a>
+        <button class="toggle-languages">SV/ENG</button>
+    </div>
     </header>
-        
+-->
+    <header class="hero">
+        <div class="hero-video">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="images/video_zoo.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </header>
+
     <nav class="navbar">
 
-        <ul class="nav-links">
-            <li><a href="www.google.se" title="Hem">Hem</a>
-            <li><a href="www.google.se" title="Att göra">Att göra</a>
-            <li><a href="www.google.se" title="Restauranger">Restauranger</a>
-            <li><a href="www.google.se" title="Lekparken">Lekparken</a>
-            <li><a href="#gallery" title="Djuren">Djuren</a>
-            <li><a href="www.google.se" title="Hitta hit">Hitta hit</a>
-            <li><a href="www.google.se" title="Kontakt">Kontakt</a>
-        </ul>
+        <div class="navbar-container">
+
+            <div class="logo">
+                <img src="images/logga_Lejon.png" alt="Logo">
+                <a href="index.html">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="www.google.se" title="Att göra">ATT GÖRA</a>
+                <li><a href="www.google.se" title="Restauranger">RESTAURANGER</a>
+                <li><a href="www.google.se" title="Lekparken">LEKPARKEN</a>
+                <li><a href="#gallery" title="Djuren">DJUREN</a>
+                <li><a href="#gallery" title="ÖPPETTIDER">ÖPPETTIDER</a>
+                <li><a href="www.google.se" title="Hitta hit">HITTA HIT</a>
+                <li><a href="www.google.se" title="Kontakt">KONTAKT</a>
+            </ul>
+
     </nav>
-    
+
+
     <section id="plan-visit">
         <h1>PLANERA DITT BESÖK</h1>
         <div class="plan-content">
             <dl>
                 <div class="#opening-hours">
-                <dt>Öppettider</dt>
-                <dd>Alla dagar 10-16 </dd>
+                    <dt>Öppettider</dt>
+                    <dd>Alla dagar 10-16 </dd>
                 </div>
 
                 <dt>Adress</dt>
@@ -52,10 +75,10 @@
                 <dt>Bus</dt>
                 <dd>Bus 12A & bus 10B </dd>
             </dl>
-                <aside>
-                    <img src="Illustrated zoo map .png" alt="Karta över zoo">
-                </aside>
-        </div>       
+            <aside>
+                <img src="Illustrated zoo map .png" alt="Karta över zoo">
+            </aside>
+        </div>
     </section>
 
     <section id="gallery">
@@ -77,3 +100,5 @@
 </body>
 
 </html>
+
+test
