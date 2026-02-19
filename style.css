@@ -1,18 +1,16 @@
-
 body {
     background-color: #F7EFDE;
 }
 
-<!--NAVBAR-->
+
 .nav {
     background-color: #F7EFDE;
 }
 
-.topbar
-{
+.topbar {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index:1;
 
     display: flex;
     align-items: center;
@@ -27,12 +25,89 @@ body {
     border-bottom: 3px ridge black;
 }
 
-.header-center
-{
+.header-center {
     position: relative;
 }
-.header-center img
-{
+
+.header-center img {
     height: 200px;
 }
 
+.menu-checkbox {
+    display: none;
+}
+
+.header-left
+{
+    position: relative;
+    z-index: 2;
+}
+
+.menu-button {
+    z-index: 3;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.menu-checkbox:checked + .menu-button {
+    transform: rotate(90deg);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    backdrop-filter: blur(20px);
+    background-color: #aca699;
+    border-right: 3px ridge black;
+    padding-top: 100px;
+    transition: left 0.3s ease;
+    z-index: 0;
+}
+
+.menu-checkbox:checked ~ .navbar {
+    left: 0;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 20px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px 20px;
+    display: block;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.toggle-languages {
+    padding: 6px 12px;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.toggle-languages:hover {
+    background-color: black;
+    color: white;
+}
