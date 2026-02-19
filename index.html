@@ -10,43 +10,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!---- <header class="topbar">
-        <div class="header-left">
-            <button class="menu-btn">☰</button> <!--Snygga till denna knapp med animering
-    </div>
-    <div class="header-center">
-        <a href="">
-            <img src="Images/Logo_design_for_SAL.png" alt="Picture of Zoo SAL's logo">
-        </a>
-    </div>
-    <div class="header-right">
-        <a href="#opening-hours">Öppettider</a>
-        <button class="toggle-languages">SV/ENG</button>
-    </div>
-    </header>
--->
-    <header class="hero">
-        <div class="hero-video">
-            <video autoplay muted loop playsinline class="hero-video">
-                <source src="images/video_zoo.mp4" type="video/mp4">
-            </video>
-        </div>
-
-    </header>
-
-    <nav class="navbar">
-
-        <div class="navbar-container">
+    <header class="topbar">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <nav class="navbar">
+            <div class="menu">
+                <label for="menu-toggle" class="menu-button">
+                    <span class="open">☰</span>
+                    <span class="close">✖</span>
+                </label>
+            </div>
 
             <div class="logo">
                 <img src="images/logga_Lejon.png" alt="Logo">
-                <a href="index.html">
+                <a href="index.html"></a>
             </div>
-
+        </nav>
+        <nav class="navbar-side" id="mobile-menu">
             <ul class="nav-links">
                 <li><a href="www.google.se" title="Att göra">ATT GÖRA</a>
                 <li><a href="www.google.se" title="Restauranger">RESTAURANGER</a>
@@ -56,37 +40,63 @@
                 <li><a href="www.google.se" title="Hitta hit">HITTA HIT</a>
                 <li><a href="www.google.se" title="Kontakt">KONTAKT</a>
             </ul>
-
-    </nav>
-
-
-    <section id="plan-visit">
-        <h1>PLANERA DITT BESÖK</h1>
+        </nav>
+        <label for="menu-toggle" class="menu-overlay"></label>   
+    </header>
+    
+    <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="images/video_zoo.mp4" type="video/mp4">
+        </video>
+    </section>
+    
+     <section id="plan-visit">
+        <h1>PLANERA DITT BESÖK</h1>--
         <div class="plan-content">
             <dl>
-                <div class="#opening-hours">
-                    <dt>Öppettider</dt>
+                <div>
+                    <dt><i class="fa-regular fa-clock"></i>Öppettider</dt>
                     <dd>Alla dagar 10-16 </dd>
                 </div>
 
-                <dt>Adress</dt>
-                <dd>Salsovägen 35, 417 56 Göteborg </dd>
+                <div>
+                    <dt><a href="https://www.google.com/maps/dir//Kullevi,+Kullav%C3%A4gen+3,+618+30+Kolm%C3%A5rden/@58.6763296,16.3721019,17z/data=!4m18!1m8!3m7!1s0x46592e24adb0359f:0x6508dfa646ef340b!2sKullevi,+Kullav%C3%A4gen+3,+618+30+Kolm%C3%A5rden!3b1!8m2!3d58.6762694!4d16.3720822!16s%2Fg%2F11b8tfr6n5!4m8!1m0!1m5!1m1!1s0x46592e24adb0359f:0x6508dfa646ef340b!2m2!1d16.3720822!2d58.6762694!3e0?entry=ttu&g_ep=EgoyMDI2MDIxNi4wIKXMDSoASAFQAw%3D%3D" title="öppna i google maps" target="_blank"><i class="fa-solid fa-location-dot"></i> Adress</a></dt>
+                    <dd>Salsovägen 35, 417 56 Göteborg </dd> 
+                </div>
 
-                <dt>Bus</dt>
-                <dd>Bus 12A & bus 10B </dd>
+                <div>
+                    <dt><i class="fa-solid fa-bus"></i>Buss</dt>
+                    <dd>Buss 12A & bus 10B </dd>
+                </div>
             </dl>
             <aside>
-                <img src="Illustrated zoo map .png" alt="Karta över zoo">
+                <img src="/Images/Illustrated_zoo_SAL_map_.png" alt="Karta över zoo">
             </aside>
         </div>
     </section>
 
     <section id="gallery">
         <div class="gallery">
+
+            <div class="gallery-card">
             <img class="gallery-picture" src="images/lion.png" alt="Bild på ett lejon">
+            <p>Lejon</p>
+            </div>
+
+            <div class="gallery-card">
             <img class="gallery-picture" src="images/giraffe.png" alt="Bild på en giraff">
+            <p>Giraff</p>
+            </div>
+
+            <div class="gallery-card">
             <img class="gallery-picture" src="images/zebra.png" alt="Bild på en zebra">
+            <p>Zebra</p>
+            </div>
+
+            <div class="gallery-card">
             <img class="gallery-picture" src="images/parrot.png" alt="Bild på en fågel">
+              <p>Pappegoja</p>
+            </div>
         </div>
     </section>
 
@@ -101,4 +111,3 @@
 
 </html>
 
-test
