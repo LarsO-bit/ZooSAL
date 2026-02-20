@@ -280,3 +280,11 @@ body {
     text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     font-weight: bold;
 }
+
+.bamboo-divider {
+    height: 35px;
+    background-image: url('images/Bambu.png');
+    background-repeat: repeat-x;
+    background-size: auto 250%;
+    background-color: #F7EFDE;
+}
