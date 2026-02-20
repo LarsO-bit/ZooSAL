@@ -39,7 +39,7 @@ body {
 
 .menu-button {
     z-index: 3;
-    font-size: 30px;
+    font-size: 35px;
     cursor: pointer;
     user-select: none;
     padding: 10px;
@@ -48,14 +48,15 @@ body {
 
 .navbar-side {
     position: fixed;
-    top: 0;
+    top: 80px;
     left: -250px;
     width: 250px;
-    height: 100vh;
+    height: auto;
     backdrop-filter: blur(20px);
-    background-color: #aca699;
-    border-right: 3px ridge black;
-    padding-top: 100px;
+    background-color: rgb(176, 163, 135, 0.5);
+    border: 3px ridge black;
+    border-radius: 0 0 100px 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     transition: left 0.3s ease;
     z-index: 0;
 }
