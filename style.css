@@ -1,6 +1,7 @@
 body {
     background-color: #F7EFDE;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .topbar {
@@ -282,6 +283,7 @@ body {
 }
 
 #map-sub{
+    background:linear-gradient(#b0a387, #6c6558);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -319,6 +321,14 @@ form input
 .inp-names{
     display: flex;
     gap: 20;
+}
+
+.btn-primary{
+    border-radius: 12px;
+    font-size: 24px;
+    background-color: rgb(176, 163, 135, 0.5);
+    padding: 10px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
 #hitta-hit {
