@@ -181,8 +181,22 @@ a {
 }
 
 #plan-visit h1 {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 16px;
     margin-bottom: 30px;
+}
+
+#plan-visit h1::before,
+#plan-visit h1::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #032901);
+}
+
+#plan-visit h1::after {
+    background: linear-gradient(to left, transparent, #032901);
 }
 
 .plan-content {
@@ -190,22 +204,20 @@ a {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 120px;
-    
-    
+
+
 }
 
-.plan-content dl {
+.visit-info {
     width: 500px;
     background-color: #b0a387;
     padding: 24px;
     border-radius: 10px;
     border: 1px solid #c9b99a;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-
 }
 
-.plan-content dl div {
+.visit-row {
     display: flex;
     align-items: center;
     gap: 100px;
@@ -213,7 +225,7 @@ a {
     padding: 30px;
 }
 
-.plan-content dl div:first-child {
+.visit-row:first-child {
     border-top: 1px solid #c9b99a;
 }
 
@@ -232,7 +244,7 @@ a {
 
 
 .plan-content aside img {
-    
+
     width: 100%;
     max-height: 600px;
     object-fit: contain;
@@ -241,12 +253,12 @@ a {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.plan-content dt a {
+.map-link {
     text-decoration: none;
     color: inherit;
 }
 
-.plan-content dt a:hover {
+.map-link:hover {
     text-decoration: underline;
 }
 
@@ -262,7 +274,7 @@ a {
 }
 
 .gallery-card {
-    background-color: #b0a387;
+    background: linear-gradient(#b0a387, #ceb68a);
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -279,10 +291,24 @@ a {
 }
 
 #gallery h1 {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 30px;
     font-family: 'League Spartan', sans-serif;
 }
 
+#gallery h1::before,
+#gallery h1::after{
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #032901);
+}
+
+#gallery h1::after{
+    background: linear-gradient(to left, transparent, #032901);
+}
 
 .gallery-card table {
     padding-top: 0px;
@@ -334,7 +360,7 @@ a {
     display: flex;
     align-items: center;
     gap: 40;
-    background-color: #b0a387;
+    background: linear-gradient(#b0a387, #ceb68a);
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
@@ -353,8 +379,23 @@ a {
 }
 
 #eat h1 {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 30px;
     font-family: 'League Spartan', sans-serif;
+}
+
+#eat h1::before,
+#eat h1::after{
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #032901);
+}
+
+#eat h1::after{
+    background: linear-gradient(to left, transparent, #032901);
 }
 
 #eat h2 {
@@ -370,9 +411,24 @@ a {
     gap: 20px;
 }
 
-#playground h1,
-h2 {
-    text-align: center;
+#playground h1{
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+#playground h1::before,
+#playground h1::after{
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #032901);
+}
+
+#playground h1::after{
+    background: linear-gradient(to left, transparent, #032901 );
 }
 
 .playground {
@@ -380,9 +436,9 @@ h2 {
     display: flex;
     align-items: center;
     gap: 40;
-    background-color: #b0a387;
+
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 .playground-content {
@@ -468,14 +524,14 @@ form input {
     padding: 10px;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    border: none;  
+    border: none;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: rgba(176, 163, 135, 0.344);
 }
 
-.btn-primary:active{
+.btn-primary:active {
     background-color: rgba(0, 0, 0, 0.055);
     box-shadow: 0 5px rgba(0, 0, 0, 0.15);
     transform: translateY(4px);
@@ -583,3 +639,4 @@ form input {
     scale: 1.5;
     border-radius: 24px;
 }
+
