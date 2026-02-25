@@ -328,7 +328,7 @@ body {
 }
 
 #map-sub {
-    background: linear-gradient(#b0a387, #6c6558);
+    background: linear-gradient(#b0a387, #ceb68a);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,13 +348,13 @@ form {
     width: 400px;
     padding: 30px;
     border-radius: 15px;
-    background: rgb(176, 163, 135, 0.5);
+    background: #F7EFDE;
     backdrop-filter: blur(10px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 form input {
-    width: 97.5%;
+    width: 100%;
     padding: 12px;
     margin-bottom: 15px;
     box-sizing: border-box;
@@ -364,7 +364,8 @@ form input {
 
 .inp-names {
     display: flex;
-    gap: 20;
+    flex:1;
+    gap: 20px;
 }
 
 .btn-primary {
@@ -405,7 +406,7 @@ form input {
 #footer-left{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 76.5px;
 }
 
 #adress{
