@@ -2,6 +2,29 @@ body {
     background-color: #F7EFDE;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'League Spartan', sans serif;
+}
+
+p{
+    font-size: 20px;
+}
+
+h1{
+    color: #576240;
+    font-size: 50px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+caption{
+    font-size: 30px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .topbar {
@@ -43,6 +66,13 @@ body {
     user-select: none;
     padding: 10px;
     transition: transform 0.3s ease;
+}
+
+#right-topbar{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    font-size: 20px;
 }
 
 .navbar-side {
@@ -194,8 +224,6 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-
-
 }
 
 .plan-content dd {
@@ -371,12 +399,8 @@ h2 {
 }
 
 .playground-content {
-
     padding: 50px;
-
 }
-
-
 
 #map-sub {
     background: linear-gradient(#b0a387, #ceb68a);
@@ -387,7 +411,8 @@ h2 {
 
 #subscription {
     padding: 40px;
-    display: column;
+    display: flex;
+    flex-direction: column;
 }
 
 #header-sub {
@@ -396,7 +421,7 @@ h2 {
 }
 
 form {
-    max-width: 500px;
+    max-width: 470px;
     padding: 30px;
     border-radius: 15px;
     background: #F7EFDE;
@@ -418,13 +443,21 @@ form input {
 }
 
 .inp-names {
+    
     display: flex;
     justify-content: space-between;
+   
 }
 
-#f-name, #l-name{
+#f-name{
+    min-width: 45%;
+    margin-right: 20px;
+}
+
+#l-name{
     min-width: 45%;
 }
+
 
 .btn-primary {
     border-radius: 12px;
@@ -453,7 +486,6 @@ form input {
     max-width: 700px;
     border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
     padding: 8px;
 }
 
