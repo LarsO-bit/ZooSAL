@@ -5,20 +5,20 @@ body {
     font-family: 'League Spartan', sans serif;
 }
 
-p{
+p {
     font-size: 20px;
 }
 
-h1{
+h1 {
     color: #576240;
     font-size: 50px;
 }
 
-h2{
+h2 {
     font-size: 40px;
 }
 
-caption{
+caption {
     font-size: 30px;
 }
 
@@ -68,11 +68,17 @@ a {
     transition: transform 0.3s ease;
 }
 
-#right-topbar{
+#right-topbar {
     display: flex;
     flex-direction: row;
-    gap:30px;
+    gap: 30px;
     font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+#right-topbar dt:hover {
+    transform: scale(1.1);
+    transform-origin: left;
 }
 
 .navbar-side {
@@ -153,6 +159,8 @@ a {
     transform: translate(-50%, -50%);
     object-fit: cover;
 }
+
+
 
 
 
@@ -299,14 +307,14 @@ a {
 }
 
 #gallery h1::before,
-#gallery h1::after{
+#gallery h1::after {
     content: '';
     flex: 1;
     height: 2px;
     background: linear-gradient(to right, transparent, #032901);
 }
 
-#gallery h1::after{
+#gallery h1::after {
     background: linear-gradient(to left, transparent, #032901);
 }
 
@@ -387,14 +395,14 @@ a {
 }
 
 #eat h1::before,
-#eat h1::after{
+#eat h1::after {
     content: '';
     flex: 1;
     height: 2px;
     background: linear-gradient(to right, transparent, #032901);
 }
 
-#eat h1::after{
+#eat h1::after {
     background: linear-gradient(to left, transparent, #032901);
 }
 
@@ -411,7 +419,7 @@ a {
     gap: 20px;
 }
 
-#playground h1{
+#playground h1 {
 
     display: flex;
     align-items: center;
@@ -420,15 +428,15 @@ a {
 }
 
 #playground h1::before,
-#playground h1::after{
+#playground h1::after {
     content: '';
     flex: 1;
     height: 2px;
     background: linear-gradient(to right, transparent, #032901);
 }
 
-#playground h1::after{
-    background: linear-gradient(to left, transparent, #032901 );
+#playground h1::after {
+    background: linear-gradient(to left, transparent, #032901);
 }
 
 .playground {
@@ -501,17 +509,17 @@ form input {
 }
 
 .inp-names {
-    
+
     display: flex;
     justify-content: space-between;
 }
 
-#f-name{
+#f-name {
     min-width: 45%;
     margin-right: 20px;
 }
 
-#l-name{
+#l-name {
     min-width: 45%;
 }
 
@@ -640,4 +648,3 @@ form input {
     scale: 1.5;
     border-radius: 24px;
 }
-
