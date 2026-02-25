@@ -396,7 +396,7 @@ h2 {
 }
 
 form {
-    width: 400px;
+    max-width: 500px;
     padding: 30px;
     border-radius: 15px;
     background: #F7EFDE;
@@ -405,26 +405,47 @@ form {
 }
 
 form input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
+    min-width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 2rem;
     box-sizing: border-box;
     font-size: 16px;
-    background: rgba(255, 255, 255, 0.8)
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #6c6558;
+    border-radius: 12px;
+
+    transition: all 0.3s ease;
 }
 
 .inp-names {
     display: flex;
-    flex: 1;
-    gap: 20px;
+    justify-content: space-between;
+}
+
+#f-name, #l-name{
+    min-width: 45%;
 }
 
 .btn-primary {
     border-radius: 12px;
     font-size: 24px;
-    background-color: rgb(176, 163, 135, 0.5);
+    text-align: center;
+    outline: none;
+    background-color: rgba(161, 131, 66, 0.5);
     padding: 10px;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border: none;  
+}
+
+.btn-primary:hover{
+    background-color: rgba(176, 163, 135, 0.344);
+}
+
+.btn-primary:active{
+    background-color: rgba(0, 0, 0, 0.055);
+    box-shadow: 0 5px rgba(0, 0, 0, 0.15);
+    transform: translateY(4px);
 }
 
 #hitta-hit {
