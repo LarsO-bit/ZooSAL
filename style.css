@@ -327,9 +327,6 @@ body {
     margin-bottom: 0px;
 }
 
-#map-sub{
-    background:linear-gradient(#73a17c, #73a17c);
-
 #map-sub {
     background: linear-gradient(#b0a387, #6c6558);
     display: flex;
