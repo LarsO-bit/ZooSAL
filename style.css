@@ -207,6 +207,12 @@ a {
     background: linear-gradient(to left, transparent, #032901);
 }
 
+.fun-fonts {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 .plan-content {
     display: flex;
     align-items: flex-start;
@@ -490,7 +496,7 @@ form {
     max-width: 450px;
     padding: 50px;
     border-radius: 15px;
-    background: linear-gradient(#dccaa2,#F7EFDE);
+    background: linear-gradient(#dccaa2, #F7EFDE);
     backdrop-filter: blur(10px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
@@ -647,4 +653,9 @@ form input {
     opacity: 1;
     scale: 1.5;
     border-radius: 24px;
+}
+
+.todo {
+    padding: 40px;
+
 }
