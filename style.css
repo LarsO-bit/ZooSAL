@@ -327,6 +327,50 @@ body {
     margin-bottom: 0px;
 }
 
+#playground {
+    padding: 40px;
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#playground h1,
+h2 {
+    text-align: center;
+}
+
+.playground {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    gap: 40;
+    background-color: #b0a387;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.playground-content {
+    padding: 30px;
+}
+
+.playground-picture {
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.playground-content {
+
+    padding: 50px;
+
+}
+
+
+
 #map-sub {
     background: linear-gradient(#b0a387, #ceb68a);
     display: flex;
@@ -364,7 +408,7 @@ form input {
 
 .inp-names {
     display: flex;
-    flex:1;
+    flex: 1;
     gap: 20px;
 }
 
@@ -390,10 +434,10 @@ form input {
     height: 500px;
     border: none;
     display: block;
-    border-radius: 24px ;
+    border-radius: 24px;
 }
 
-#footer{
+#footer {
     display: grid;
     font-size: 20px;
     grid-template-columns: auto auto auto;
@@ -403,18 +447,18 @@ form input {
     color: white;
 }
 
-#footer-left{
+#footer-left {
     display: flex;
     flex-direction: column;
     gap: 76.5px;
 }
 
-#adress{
+#adress {
     display: flex;
     flex-direction: column;
 }
 
-#open-hours{
+#open-hours {
     display: flex;
     flex-direction: column;
 }
@@ -429,18 +473,18 @@ form input {
     transform: scale(1.2);
 }
 
-#footer-center{
+#footer-center {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-#contact-tel{
+#contact-tel {
     display: flex;
     flex-direction: column;
 }
 
-#contact-mail{
+#contact-mail {
     display: flex;
     flex-direction: column;
 }
@@ -455,7 +499,7 @@ form input {
     transform: scale(1.2);
 }
 
-#footer-right{
+#footer-right {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -463,19 +507,19 @@ form input {
 }
 
 #social-media {
-  display: flex;
-  gap: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
 }
 
 #social-media img {
-  width: 80px;
-  height: 80px;
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
+    width: 80px;
+    height: 80px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
 
 #social-media a:hover img {
-  opacity: 1;
-  scale: 1.5;
+    opacity: 1;
+    scale: 1.5;
     border-radius: 24px;
 }
