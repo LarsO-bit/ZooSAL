@@ -222,7 +222,8 @@ body {
     padding: 40px;
     display: flex;
     gap: 20px;
-
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
 }
 
 .gallery-card {
@@ -244,13 +245,9 @@ body {
 
 #gallery h1 {
     text-align: center;
+    font-family: 'League Spartan', sans-serif;
 }
 
-#gallery {
-    padding: 0px;
-    font-family: 'League Spartan', sans-serif;
-    text-align: center;
-}
 
 .gallery-card table {
     padding-top: 0px;
@@ -284,8 +281,57 @@ body {
     font-weight: bold;
 }
 
+#eat {
+    padding: 40px;
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.eat-content {
+    padding: 30px;
+
+}
+
+.eat-card {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40;
+    background-color: #b0a387;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.eat-card--reverse {
+    flex-direction: row-reverse;
+}
+
+.eat-picture {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+#eat h1 {
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+}
+
+#eat h2 {
+    font-family: 'League Spartan', sans-serif;
+    margin-bottom: 0px;
+}
+
 #map-sub{
     background:linear-gradient(#73a17c, #73a17c);
+
+#map-sub {
+    background: linear-gradient(#b0a387, #6c6558);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,13 +342,12 @@ body {
     display: column;
 }
 
-#header-sub{
+#header-sub {
     margin-left: auto;
     margin-right: auto;
 }
 
-form 
-{
+form {
     width: 400px;
     padding: 30px;
     border-radius: 15px;
@@ -310,8 +355,8 @@ form
     backdrop-filter: blur(10px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
-form input
-{
+
+form input {
     width: 97.5%;
     padding: 12px;
     margin-bottom: 15px;
@@ -320,12 +365,12 @@ form input
     background: rgba(255, 255, 255, 0.8)
 }
 
-.inp-names{
+.inp-names {
     display: flex;
     gap: 20;
 }
 
-.btn-primary{
+.btn-primary {
     border-radius: 12px;
     font-size: 24px;
     background-color: rgb(176, 163, 135, 0.5);
@@ -434,4 +479,5 @@ form input
 #social-media a:hover img {
   opacity: 1;
   scale: 1.5;
+    border-radius: 24px;
 }
