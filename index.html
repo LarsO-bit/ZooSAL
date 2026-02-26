@@ -57,7 +57,7 @@
 
     <section id="plan-visit">
         <h1>PLANERA DITT BESÖK</h1>
-        <p>Välkommen till en plats där äventyr, natur och gemenskap möts. I vår djurpark får du uppleva fascinerande
+        <p class="intro-text">Välkommen till en plats där äventyr, natur och gemenskap möts. I vår djurpark får du uppleva fascinerande
             djur från hela världen i en trygg och inspirerande miljö för både stora och små besökare.
 
             Här kan du vandra genom savannens landskap, upptäcka färgstarka fåglar och komma nära djur du annars bara
@@ -67,11 +67,32 @@
             Vår park är skapad för att väcka nyfikenhet, sprida kunskap och skapa minnen som stannar kvar länge. Oavsett
             om du är här för en heldag fylld av äventyr eller en lugn stund i naturen är du varmt välkommen till en
             upplevelse utöver det vanliga.</p>
-        <p class="fun-fonts"><i class="fa-solid fa-hippo"></i> Besöka djuren <i class="fa-solid fa-utensils"></i> Äta
-            god mat <i class="fa-solid fa-child-reaching"></i> Lek på våra lekplatser <i
-                class="fa-solid fa-cart-shopping"></i>
-            Shoppa souvenirer <i class="fa-solid fa-palette"></i> Ansiktsmålning <i
-                class="fa-solid fa-hospital"></i>Veterinär</p>
+        <div class="fun-fonts">
+            <div class="fun-item">
+                <i class="fa-solid fa-hippo"></i> Besöka djuren 
+                <img src="/Images/visit-animals.jpg" alt="Besöka djuren">
+            </div>
+            <div class="fun-item">
+                <i class="fa-solid fa-utensils"></i> Äta god mat
+                <img src="/Images/eating-food.jpg" alt="Äta på resturang"> 
+            </div>
+            <div class="fun-item">
+                <i class="fa-solid fa-child-reaching"></i> Lek på våra lekplatser
+                <img src="/Images/playgrounds.jpg" alt="Lekplats"> 
+            </div>
+            <div class="fun-item">
+                <i class="fa-solid fa-cart-shopping"></i> Shoppa souvenirer
+                <img src="/Images/shopping.jpg" alt="Shopping">
+            </div>
+            <div class="fun-item">
+                <i class="fa-solid fa-palette"></i> Ansiktsmålning 
+                <img src="/Images/face-paint.jpeg" alt="Barn med ansiktsmålning">
+            </div>
+            <div class="fun-item">
+                <i class="fa-solid fa-hospital"></i> Veterinär
+                <img src="/Images/vet.jpg" alt="hund hos veterinär">
+            </div>            
+        </div>
 
         <div class="plan-content">
             <aside>
@@ -278,7 +299,7 @@
     <section id="map-sub">
         <div id="subscription">
             <h2 id="header-sub">Prenumerera på vårt nyhetsbrev!</h2>
-            <form action="https://formshow.systementor.se" method="post">
+            <form action="https://formshow.systementor.se" method="post" target="_blank">
                 <div class="inp-names">
                     <label for="f-name"></label>
                     <input type="text" name="First_name" id="f-name" placeholder="First name">
@@ -286,7 +307,7 @@
                     <input type="text" name="Last_name" id="l-name" placeholder="Last name">
                 </div>
                 <div class="inp">
-                    <label></label>
+                    <label for="email"></label>
                     <input type="email" name="email" id="email" placeholder="Email">
                     <label for="age"></label>
                     <input type="number" name="age" id="age" placeholder="Age">
@@ -336,9 +357,11 @@
                     <a href="https://instagram.com" target="_blank" aria-label="Instagram">
                         <img src="images/instagram.svg" alt="bildlänk till instagram">
                     </a>
-                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-                        <img src="images/facebook.SVG" alt="bildlänk till facebook">
-                    </a>
+                    <div id="facebook">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <img src="images/facebook.SVG" alt="bildlänk till facebook">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
