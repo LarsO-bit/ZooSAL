@@ -167,8 +167,8 @@ a {
 }
 
 .logo img {
-    height: 150px;
-    padding-top: 120px;
+    height: 110px;
+    padding-top: 60px;
     margin: 0;
     position: relative;
     filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.6));
