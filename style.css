@@ -247,7 +247,7 @@ a {
     width: 400px;
     max-height: 300px;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 
     opacity: 0;
     visibility: hidden;
@@ -538,7 +538,7 @@ form {
     max-width: 450px;
     padding: 50px;
     border-radius: 15px;
-    background: linear-gradient(#bdae8e,#dccaa2);
+    background: linear-gradient(#bdae8e, #dccaa2);
     backdrop-filter: blur(10px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
