@@ -204,7 +204,7 @@ a {
 }
 
 .intro-text {
-    max-width: 800px;
+    max-width: 84%;
     line-height: 1.8;
     margin-bottom: 40px;
     margin: 0 auto 40px auto;
@@ -229,7 +229,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 100px;
     margin-bottom: 50px;
 }
 
@@ -263,54 +263,50 @@ a {
 .plan-content {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 120px;
-}
-
-aside img {
-    height: 500px;
+    margin: 0px;
 }
 
 .visit-info {
     height: 500px;
     width: 500px;
-    background-color: #b0a387;
+    background: linear-gradient(#b0a387, #ceb68a);
     border-radius: 10px;
     border: 1px solid #c9b99a;
+    overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin: 0px;
 }
 
 .visit-row {
     display: flex;
-    align-items: center;
-    gap: 100px;
+    align-items: flex-start;
     border-bottom: 1px solid #c9b99a;
     padding: 30px;
 }
 
-.visit-row:first-child {
-    border-top: 1px solid #c9b99a;
+.visit-row:last-child {
+    border-bottom: none;
 }
 
 .plan-content dt {
     font-weight: 700;
     font-size: 1.1rem;
-    width: 120px;
+    width: 220px;
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     gap: 8px;
 }
 
 .plan-content dd {
-    margin: 4px 0 0 0;
+    margin: 0;
 }
 
-
 .plan-content aside img {
-
     width: 100%;
-    max-height: 600px;
+    max-height: 500px;
     object-fit: contain;
     border-radius: 10px;
     border: 1px solid #c9b99a;
@@ -325,9 +321,6 @@ aside img {
 .map-link:hover {
     text-decoration: underline;
 }
-
-
-
 
 .gallery {
     padding: 40px;
@@ -348,7 +341,7 @@ aside img {
 
 .gallery-picture {
     width: 100%;
-    height: auto;
+    height: 550px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -407,7 +400,7 @@ aside img {
 }
 
 #eat {
-    padding: 40px;
+    padding: 20px;
     font-family: 'League Spartan', sans-serif;
     display: flex;
     flex-direction: column;
@@ -415,12 +408,11 @@ aside img {
 }
 
 .eat-content {
-    padding: 30px;
-
+    padding: 15px;
 }
 
 .eat-card {
-    padding: 20px;
+    padding: 0px;
     display: flex;
     align-items: center;
     gap: 40;
@@ -546,7 +538,7 @@ form {
     max-width: 450px;
     padding: 50px;
     border-radius: 15px;
-    background: linear-gradient(#dccaa2, #F7EFDE);
+    background: linear-gradient(#bdae8e,#dccaa2);
     backdrop-filter: blur(10px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
